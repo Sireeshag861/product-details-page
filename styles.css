@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4; 
+  }
+  .container {
+    max-width: 800px;
+    background: #ffffff; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  .main-image img {
+    width: 100%;
+    display: block;
+    border: 2px solid #ddd; 
+  }
+  .thumbnails {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .thumbnails img {
+    width: 60px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid transparent; 
+    border-radius: 4px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+  }
+  .thumbnails img:hover {
+    border-color: #555; 
+    transform: scale(1.1); 
+  }
+  .thumbnails img.active {
+    border-color: #007bff; 
+  }
+  .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #fff; 
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+  }
+  .nav:hover {
+    background-color: #007bff;
+  }
+  .nav.left {
+    left: 10px;
+    color: white;
+  }
+  .nav.right {
+    right: 10px;
+    color:white;
+  }
+  .product-details {
+    padding: 20px;
+  }
+  .product-details h1 {
+    color: #333; 
+  }
+  .product-details p {
+    color:black 
+  }
+  .quantity {
+    margin: 10px 0;
+  }
+  .toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  }
+  .toast.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .toast.hidden {
+    display: none;
+  }
+  

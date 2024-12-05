@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="carousel">
+      <div class="main-image">
+        <img id="mainImage" src="" alt="Main Product Image">
+      </div>
+      <div class="thumbnails" id="thumbnails"></div>
+      <button class="nav left" id="prev">&lt;</button>
+      <button class="nav right" id="next">&gt;</button>
+    </div>
+    <div class="product-details">
+      <h1 id="productName">Product Name</h1>
+      <p id="productPrice">$0.00</p>
+      <p id="productDescription">This is a placeholder description for the product.</p>
+      <label for="variants">Choose a variant:</label>
+      <select id="variants">
+        <option>Variant 1</option>
+        <option>Variant 2</option>
+      </select>
+      <div class="quantity">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" value="1" min="1">
+      </div>
+      <button id="addToCart">Add to Cart</button>
+      <div id="toast" class="toast hidden"></div>
+    </div>
+  </div>
+  <script src="script.js">
+    
+  </script>
+</body>
+</html>
